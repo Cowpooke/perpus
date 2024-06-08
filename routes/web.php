@@ -30,7 +30,7 @@ Route::get('login',[LoginController::class,'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 
 Route::get('register', [RegisterController::class, 'register'])->name('register');
-Route::post('actionregister', [RegisterController::class, 'actionregister'])->name('actionregister');
+Route::post('/register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
 
 Route::get('dashboard',[HomeController::class,'index'])->name('dashboard')->middleware('auth');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
