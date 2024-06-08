@@ -10,7 +10,7 @@ Route::get('/', function(){
     if (Auth::check()) {
         return redirect('dashboard');
     } else {
-        return view('login');
+        return view('landing');
     }
 });
 

@@ -20,7 +20,11 @@
             margin-bottom: 20px;
         }
         body {
-            background: #b9bae7;
+            background: rgb(254,226,255);
+            background: linear-gradient(90deg, rgba(254,226,255,1) 0%, rgba(253,247,254,1) 43%, rgba(245,254,255,1) 76%);
+        }
+        .card {
+            filter: drop-shadow(1px 1px 8px #000000);
         }
     </style>
 </head>
@@ -48,7 +52,7 @@
 
                 <!-- Register buttons -->
                 <div class="text-center">
-                    <p>belum punya akun? <a href="/register">register</a></p>
+                    <p>belum punya akun? <a href="/register">daftar</a></p>
                 </div>
             </form>
         </div>

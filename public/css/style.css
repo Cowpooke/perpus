@@ -1,3 +1,24 @@
-.container {
-    background: #b9bae7;
+
+
+
+
+.navbar {
+    background: rgb(178,241,255);
+background: linear-gradient(90deg, rgba(178,241,255,1) 0%, rgba(164,233,249,1) 42%, rgba(185,235,245,1) 76%);
 }
+
+body {
+    background: rgb(232,251,255);
+background: linear-gradient(90deg, rgba(232,251,255,1) 0%, rgba(255,255,255,1) 42%, rgba(251,227,255,1) 76%);
+}
+
+.search-box {
+    width: 50vw;
+}
+
+form {
+    position: relative;
+    width: 30rem;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+  }

@@ -20,14 +20,18 @@
             margin-bottom: 20x;
         }
         body {
-            background: #b9bae7;
+            background: rgb(254,226,255);
+            background: linear-gradient(90deg, rgba(254,226,255,1) 0%, rgba(253,247,254,1) 43%, rgba(245,254,255,1) 76%);
+        }
+        .card {
+            filter: drop-shadow(1px 1px 8px #000000);
         }
     </style>
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center align-items-center full-height">
-        <div class="card bg-light" style="width: 20rem; padding: 20px; height: 40rem ">
+    <div class="container d-flex justify-content-center align-items-center full-height" >
+        <div class="card" style="width: 20rem; padding: 20px; height: 40rem ">
             <form action="{{ route('actionregister') }}" method="POST">
                 @csrf
                 <div class="sign-up">
@@ -51,7 +55,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block mb-4">sign Up</button>
                 <div class="text-center">
-                    <p>Sudah Sign Up? <a href="{{ url('/login') }}">Login</a></p>
+                    <p>Sudah punya akun? <a href="{{ url('/login') }}">Login</a></p>
                 </div>
             </form>
         </div>
