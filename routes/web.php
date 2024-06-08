@@ -14,6 +14,8 @@ Route::get('/', function(){
     }
 });
 
+
+
 /*route::get('peminjaman',function(){
     $peminjaman = DB::table('peminjaman')->get();
 
