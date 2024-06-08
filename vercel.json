@@ -12,6 +12,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "perpustal.vercel.app",
+        "APP_KEY": "base64:yvdW1oklKgMtw85tKzaRSlL3pXC02qxs7mXB7vWsRy0=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
