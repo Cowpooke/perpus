@@ -121,7 +121,6 @@
             </b>
             
         </h1>
-        <img class="image" width="800px" height="800px" src="{{ asset('images/background.png') }}"
     </div>
 
     <footer>
