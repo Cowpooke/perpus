@@ -10,6 +10,6 @@
     </form>
 	
   <h2>
-    <a href="/peminjaman">peminjaman</a>
+    <a href="/peminjaman">Peminjaman</a>
   </h2>
 @endsection
