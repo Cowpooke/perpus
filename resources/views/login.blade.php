@@ -34,7 +34,7 @@
         <div class="card bg-light" style="width: 22rem; padding: 20px;">
             <form action="{{ route('actionlogin') }}" method="POST">
                 @csrf
-                @method('PUT')
+                @method('POST')
                 <div class="login">
                     <h2>Login</h2>
                 </div>
