@@ -5,12 +5,11 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegisterController;
 
-
 Route::get('/', function(){
     if (Auth::check()) {
         return redirect('dashboard');
     } else {
-        return view('landing');
+        return view('login');
     }
 });
 
@@ -19,6 +18,8 @@ route::get('peminjaman',function(){
 
     return view('peminjaman',['peminjaman'=> $peminjaman]);
 });
+
+Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');
 
 Route::get('login',[LoginController::class,'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');

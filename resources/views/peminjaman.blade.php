@@ -4,8 +4,7 @@
 @section('konten')
     <h2>
         status peminjaman : 
-        @if ($status = 'pending')
-        @endif
+        
     </h2>
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
