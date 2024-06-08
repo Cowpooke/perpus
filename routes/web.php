@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PeminjamanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
@@ -13,11 +14,13 @@ Route::get('/', function(){
     }
 });
 
-route::get('peminjaman',function(){
+/*route::get('peminjaman',function(){
     $peminjaman = DB::table('peminjaman')->get();
 
     return view('peminjaman',['peminjaman'=> $peminjaman]);
-});
+});*/
+
+route::get('peminjaman',[PeminjamanController::class,'getData'])->name('peminjaman');
 
 Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');
 
