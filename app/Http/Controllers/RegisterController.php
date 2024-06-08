@@ -11,7 +11,7 @@ class RegisterController extends Controller
 {
     public function register()
     {
-        return view('register');
+        return redirect()->route('register');
     }
     
     public function actionregister(Request $request)
