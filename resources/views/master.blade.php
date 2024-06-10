@@ -26,8 +26,6 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
                   <ul class="dropdown-menu">
-                    <li><a>{{Auth::user()->email}}</a></li>
-                    <li><a>{{Auth::user()->username}}</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="{{route('actionlogout')}}"><i class="fa fa-power-off"></i> Log Out</a></li>
                   </ul>
