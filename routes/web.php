@@ -9,9 +9,9 @@ use App\Http\Controllers\RegisterController;
 
 Route::get('/', function(){
     if (Auth::check()) {
-        return route('dashboard');
+        return redirect('dashboard');
     } else {
-        return route('landing');
+        return redirect('landing');
     }
 });
 
