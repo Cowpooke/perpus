@@ -32,6 +32,10 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center full-height">
         <div class="card bg-light" style="width: 22rem; padding: 20px;">
+
+
+
+
             <form action="{{ route('actionlogin') }}" method="POST">
                 @csrf
                 <div class="login">
@@ -54,6 +58,11 @@
                 <div class="text-center">
                     <p>belum punya akun? <a href="/register">daftar</a></p>
                 </div>
+
+
+
+
+                
             </form>
         </div>
     </div>
