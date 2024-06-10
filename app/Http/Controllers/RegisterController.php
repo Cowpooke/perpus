@@ -11,7 +11,7 @@ class RegisterController extends Controller
 {
     public function register()
     {
-        return redirect('register');
+        return redirect('/register');
     }
     
     public function actionregister(Request $request)
@@ -25,6 +25,6 @@ class RegisterController extends Controller
         ]);
 
         Session::flash('message', 'Register Berhasil. Akun Anda sudah Aktif silahkan Login menggunakan username dan password.');
-        return redirect('login');
+        return redirect('/login');
     }
 }
