@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     public function login(){
         if (Auth::check()) {
-            return view('dashboard');
+            return redirect()->route('dashboard');
         } else {
             return view('login');
         }
