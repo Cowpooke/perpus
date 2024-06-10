@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     public function login(){
         if (Auth::check()) {
-            return redirect()->route('dashboard');
+            return view('dashboard');
         } else {
             return view('login');
         }
@@ -23,7 +23,7 @@ class LoginController extends Controller
         ];
 
         if (Auth::attempt($data)) {
-            return redirect()->route('dashboard');
+            return view('dashboard');
         } else {
             $request->session()->flash('error', 'Email atau password salah');
             return view('login');
