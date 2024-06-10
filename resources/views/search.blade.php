@@ -15,7 +15,7 @@
         @endforeach
     @else 
         <div>
-            <h2>No posts found</h2>
+            <h2>No books found</h2>
         </div>
     @endif
 @endsection

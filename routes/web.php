@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
@@ -8,9 +9,9 @@ use App\Http\Controllers\RegisterController;
 
 Route::get('/', function(){
     if (Auth::check()) {
-        return view('dashboard');
+        return route('dashboard');
     } else {
-        return view('landing');
+        return route('landing');
     }
 });
 
@@ -22,7 +23,8 @@ Route::get('/', function(){
 
 route::get('peminjaman',[PeminjamanController::class,'getData'])->name('peminjaman');
 
-Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');
+/*Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');*/
+Route::get('search', [SearchController::class,'search'])->name('search');
 
 Route::get('login',[LoginController::class,'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
