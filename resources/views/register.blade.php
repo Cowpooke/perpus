@@ -34,7 +34,6 @@
         <div class="card" style="width: 20rem; padding: 20px; height: 40rem ">
             <form action="{{ route('actionregister') }}" method="POST">
                 @csrf
-                @method('POST')
                 <div class="sign-up">
                     <h2>sign Up</h2>
                 </div>
