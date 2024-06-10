@@ -22,6 +22,12 @@ Route::get('/', function(){
     return view('peminjaman',['peminjaman'=> $peminjaman]);
 });*/
 
+/*route::get('peminjaman',function(){
+    $peminjaman = DB::table('peminjaman')->get();
+
+    return view('peminjaman',['peminjaman'=> $peminjaman]);
+});*/
+
 route::get('peminjaman',[PeminjamanController::class,'getData'])->name('peminjaman');
 
 /*Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');*/
