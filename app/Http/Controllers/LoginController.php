@@ -23,7 +23,7 @@ class LoginController extends Controller
         ];
 
         if (Auth::attempt($data)) {
-            return redirect()->route('dashboard');
+            return redirect('dashboard');
         } else {
             $request->session()->flash('error', 'Email atau password salah');
             return redirect('/');
